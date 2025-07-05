@@ -1,22 +1,71 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // Variáveis para a CARTA 1
+    char carta1[3], estado1[4], codigo1[5], cidade1[31];
+    float populacao1, area1;
+    int pontos1;
+
+    // Variáveis para a CARTA 2
+    char carta2[3], estado2[4], codigo2[5], cidade2[31];
+    float populacao2, area2;
+    int pontos2;
+
+    printf("\n\n................BEM VINDO AO SUPER TRUNFO..............");
+
+    // CARTA 1
+    printf("\n\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n");
+    printf(">>>>>>>>>>>   CARTA 1   <<<<<<<<<<<<<\n");
+    printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
+
+    printf("Carta: ");
+    scanf("%2s", carta1);
+
+    printf("Estado (ex: 'SP'): ");
+    scanf("%3s", estado1);
+
+    printf("Codigo: ");
+    scanf("%4s", codigo1);
+
+    printf("Nome da Cidade: ");
+    scanf(" %30[^\n]", cidade1);  // lê até 30 caracteres com espaço
+
+    printf("População: ");
+    scanf("%f", &populacao1);
+
+    printf("Área: ");
+    scanf("%f", &area1);
+
+    printf("Número de Pontos Turísticos: ");
+    scanf("%d", &pontos1);
+
+    // CARTA 2
+    printf("\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n");
+    printf(">>>>>>>>>>>   CARTA 2   <<<<<<<<<<<<<\n");
+    printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
+
+    printf("Carta: ");
+    scanf("%2s", carta2);
+
+    printf("Estado (ex: 'SP'): ");
+    scanf("%3s", estado2);
+
+    printf("Codigo: ");
+    scanf("%4s", codigo2);
+
+    printf("Nome da Cidade: ");
+    scanf(" %30[^\n]", cidade2);  // lê até 30 caracteres com espaço
+
+    printf("População: ");
+    scanf("%f", &populacao2);
+
+    printf("Área: ");
+    scanf("%f", &area2);
+
+    printf("Número de Pontos Turísticos: ");
+    scanf("%d", &pontos2);
+
+    printf("\n\n");
 
     return 0;
 }
