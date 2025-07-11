@@ -1,71 +1,73 @@
 #include <stdio.h>
+int main (){
 
-int main() {
-    // Variáveis para a CARTA 1
-    char carta1[3], estado1[4], codigo1[5], cidade1[31];
-    float populacao1, area1;
-    int pontos1;
+    //organização e declaração de variáveis
+int codigo1, codigo2, npontos1, npontos2;
+char carta1[2], carta2[2], estado1[3], estado2[3], cidade1[50], cidade2[50]; 
+float pop1, pop2, area1, area2, PIB1, PIB2;
 
-    // Variáveis para a CARTA 2
-    char carta2[3], estado2[4], codigo2[5], cidade2[31];
-    float populacao2, area2;
-    int pontos2;
+printf ("\n\n======================================");
+printf ("\n====== BEM-VINDO AO SUPER TRUNFO ======");
+printf ("\n======================================\n\n");
 
-    printf("\n\n................BEM VINDO AO SUPER TRUNFO..............");
 
-    // CARTA 1
-    printf("\n\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n");
-    printf(">>>>>>>>>>>   CARTA 1   <<<<<<<<<<<<<\n");
-    printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
+    //primeira sessão de entradas - CARTA 1.
 
-    printf("Carta: ");
-    scanf("%2s", carta1);
+printf (">>>>>>>>>> CARTA 1 <<<<<<<<<\n");
+printf ("Carta (A ou B): ");
+scanf ("%1s", carta1);
 
-    printf("Estado (ex: 'SP'): ");
-    scanf("%3s", estado1);
+printf ("Estado: ");
+scanf ("%2s", estado1);
 
-    printf("Codigo: ");
-    scanf("%4s", codigo1);
+printf ("Codigo: ");
+scanf ("%d", &codigo1);
 
-    printf("Nome da Cidade: ");
-    scanf(" %30[^\n]", cidade1);  // lê até 30 caracteres com espaço
+printf ("Nome da cidade: ");
+scanf ("%49s", cidade1);
 
-    printf("População: ");
-    scanf("%f", &populacao1);
+printf ("Populacao: ");
+scanf ("%f", &pop1);
 
-    printf("Área: ");
-    scanf("%f", &area1);
+printf ("Area (em M quadrado): ");
+scanf ("%f", &area1);
 
-    printf("Número de Pontos Turísticos: ");
-    scanf("%d", &pontos1);
+printf ("PIB: ");
+scanf ("%f", &PIB1);
 
-    // CARTA 2
-    printf("\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n");
-    printf(">>>>>>>>>>>   CARTA 2   <<<<<<<<<<<<<\n");
-    printf(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n\n");
+printf ("Numeros de pontos turisticos: ");
+scanf ("%d", &npontos1);
 
-    printf("Carta: ");
-    scanf("%2s", carta2);
 
-    printf("Estado (ex: 'SP'): ");
-    scanf("%3s", estado2);
+//segunda sessão de entrdas - CARTA 2.
 
-    printf("Codigo: ");
-    scanf("%4s", codigo2);
+printf ("\n\n"); //preferi dar espaços assim por questão estética rsrsrs
+printf (">>>>>>>>>> CARTA 2 <<<<<<<<<\n");
+printf ("Carta (A ou B): ");
+scanf ("%1s", carta2);
 
-    printf("Nome da Cidade: ");
-    scanf(" %30[^\n]", cidade2);  // lê até 30 caracteres com espaço
+printf ("Estado: ");
+scanf ("%2s", estado2);
 
-    printf("População: ");
-    scanf("%f", &populacao2);
+printf ("Codigo: ");
+scanf ("%d", &codigo2);
 
-    printf("Área: ");
-    scanf("%f", &area2);
+printf ("Nome da cidade: ");
+scanf ("%49s", cidade2);
 
-    printf("Número de Pontos Turísticos: ");
-    scanf("%d", &pontos2);
+printf ("Populacao: ");
+scanf ("%f", &pop2);
 
-    printf("\n\n");
+printf ("Area (em M quadrado): ");
+scanf ("%f", &area2);
+
+printf ("PIB: ");
+scanf ("%f", &PIB2);
+
+printf ("Numeros de pontos turisticos: ");
+scanf ("%d", &npontos2);
+
+printf ("\n\n\n>>>>>>>>>>>>>>>>>>>>>>>>> FIMMMMMMMMMMM :-) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 
     return 0;
 }
