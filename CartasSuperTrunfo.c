@@ -10,7 +10,6 @@ printf ("\n\n======================================");
 printf ("\n====== BEM-VINDO AO SUPER TRUNFO ======");
 printf ("\n======================================\n\n");
 
-
     //primeira sessão de entradas - CARTA 1.
 
 printf (">>>>>>>>>> CARTA 1 <<<<<<<<<\n");
